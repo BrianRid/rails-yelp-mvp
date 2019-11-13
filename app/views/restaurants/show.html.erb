@@ -1,0 +1,15 @@
+<div class="container mt-3">
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><%= @restaurant.name%></h5>
+      <p class="card-text"><%= @restaurant.category %></p>
+      <p class="card-text"> <%= @restaurant.address %></p>
+      <%= link_to 'Review this place' , new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+    </div>
+  <%= link_to "Back to home", restaurant_path, class: "btn-primary col-6" %>
+  </div>
+
+</div>
+
